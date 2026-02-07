@@ -1,0 +1,71 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="20%" r="80%">
+      <stop offset="0%" stop-color="#222533"/>
+      <stop offset="100%" stop-color="#05060A"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 1
+                0 0 0 0 1
+                0 0 0 0 1
+                0 0 0 0.9 0"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bgGrad)"/>
+
+  <g filter="url(#glow)">
+    <text x="50%" y="120" text-anchor="middle"
+          fill="#FFFFFF"
+          font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+          font-size="72"
+          font-weight="700"
+          letter-spacing="6">
+      J&amp;C
+    </text>
+  </g>
+
+  <g transform="translate(0, 20)" stroke="#FFFFFF" stroke-width="10" fill="none" filter="url(#glow)">
+    <path d="
+      M140 210
+      C120 210 105 225 100 245
+      L80 320
+      C75 340 88 360 108 365
+      L150 375
+      C170 380 188 368 194 348
+      L204 315
+      H308
+      L318 348
+      C324 368 342 380 362 375
+      L404 365
+      C424 360 437 340 432 320
+      L412 245
+      C407 225 392 210 372 210
+      Z" />
+
+    <g>
+      <rect x="170" y="245" width="26" height="60" rx="6" />
+      <rect x="152" y="263" width="60" height="26" rx="6" />
+    </g>
+
+    <g>
+      <circle cx="340" cy="260" r="10" />
+      <circle cx="365" cy="280" r="10" />
+      <circle cx="315" cy="280" r="10" />
+      <circle cx="340" cy="300" r="10" />
+    </g>
+  </g>
+
+  <g filter="url(#glow)">
+    <text x="50%" y="420" text-anchor="middle"
+          fill="#FFFFFF"
+          font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+          font-size="40"
+          font-weight="600"
+          letter-spacing="8">
+      UNBLOCKED
+    </text>
+  </g>
+</svg>
